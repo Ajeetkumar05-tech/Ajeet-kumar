@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse | Modern Hospital & Healthcare Management System</title>
+    
+    <!-- Meta tags for SEO & preview -->
+    <meta name="description" content="CarePulse Hospital Management System provides state-of-the-art medical services, online appointment booking, specialist doctors, and smart healthcare solutions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+    <!-- TOP EMERGENCY & INFO ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <div class="top-info-item">
+                    <i class="fa-solid fa-phone-volume text-danger animate-pulse"></i>
+                    <span><strong>24/7 Emergency:</strong> <a href="tel:18004325844">+1 (800) 432-5844</a></span>
+                </div>
+                <div class="top-info-item hide-mobile">
+                    <i class="fa-solid fa-location-dot text-primary"></i>
+                    <span>742 Evergreen Healthcare Blvd, Medical City</span>
+                </div>
+                <div class="top-info-item hide-mobile">
+                    <i class="fa-regular fa-clock text-accent"></i>
+                    <span>OPD: 8:00 AM - 9:00 PM | ER: 24 Hours</span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <button class="portal-btn" id="openLoginBtn">
+                    <i class="fa-solid fa-hospital-user"></i>
+                    <span>HMS Portal Login</span>
+                </button>
+                <div class="theme-toggle" id="themeToggleBtn" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="main-navbar" id="mainNavbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Care<span>Pulse</span></span>
+                    <span class="brand-tagline">Hospital Management System</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#departments" class="nav-link">Departments</a></li>
+                    <li><a href="#doctors" class="nav-link">Doctors</a></li>
+                    <li><a href="#features" class="nav-link">HMS Features</a></li>
+                    <li><a href="#calculator" class="nav-link">Health Triage</a></li>
+                    <li><a href="#testimonials" class="nav-link">Stories</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions-mobile">
+                    <button class="btn btn-primary" id="mobileBookBtn">
+                        <i class="fa-regular fa-calendar-check"></i> Book Appointment
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="tel:911" class="emergency-badge" title="Direct Emergency Line">
+                    <span class="badge-dot"></span>
+                    <i class="fa-solid fa-truck-medical"></i>
+                    <span>Ambulance: 911</span>
+                </a>
+                <button class="btn btn-primary" id="navBookAppointmentBtn">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <span>Book Appointment</span>
+                </button>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Trusted by 120,000+ Families Nationwide</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    World-Class Medical Care, Powered by <span>Smart Healthcare</span> Technology.
+                </h1>
+
+                <p class="hero-description">
+                    CarePulse Hospital unites globally recognized medical specialists with automated digital healthcare management. Experience real-time OPD token tracking, instant digital appointments, and dedicated 24/7 emergency response.
+                </p>
+
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary btn-lg" id="heroBookBtn">
+                        <i class="fa-solid fa-calendar-plus"></i> Book Consultation
+                    </button>
+                    <a href="#departments" class="btn btn-outline btn-lg">
+                        <i class="fa-solid fa-stethoscope"></i> Explore Specialties
+                    </a>
+                </div>
+
+                <!-- Trust indicators -->
+                <div class="hero-trust">
+                    <div class="avatar-group">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Patient" class="avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Patient" class="avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Patient" class="avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="Patient" class="avatar">
+                        <div class="avatar-count">+4.8k</div>
+                    </div>
+                    <div class="trust-text">
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <strong>4.9 / 5.0</strong>
+                        </div>
+                        <p>Verified Patient Satisfaction Score</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Interactive Dashboard Visual -->
+            <div class="hero-visual">
+                <div class="visual-main-card">
+                    <div class="doctor-badge-overlay">
+                        <div class="doc-avatar">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80" alt="Chief Physician">
+                            <span class="active-status"></span>
+                        </div>
+                        <div class="doc-info">
+                            <h4>Dr. Elena Rostova, MD</h4>
+                            <p>Chief of Cardiac Surgery</p>
+                            <span class="badge-tag"><i class="fa-solid fa-circle-check"></i> Available Today</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-card-image-box">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80" alt="Modern Hospital Facilities" class="hero-center-img">
+                        <div class="image-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Live Hospital HMS Statistics Widget -->
+                    <div class="live-hms-widget">
+                        <div class="widget-header">
+                            <div class="widget-title">
+                                <span class="live-pulse-dot"></span>
+                                <span>Live HMS Facility Status</span>
+                            </div>
+                            <span class="status-time" id="liveClock">Updated Just Now</span>
+                        </div>
+                        <div class="widget-grid">
+                            <div class="widget-stat">
+                                <div class="stat-icon bg-emerald"><i class="fa-solid fa-bed-pulse"></i></div>
+                                <div>
+                                    <div class="stat-number">28</div>
+                                    <div class="stat-lbl">ICU Beds Free</div>
+                                </div>
+                            </div>
+                            <div class="widget-stat">
+                                <div class="stat-icon bg-blue"><i class="fa-solid fa-user-doctor"></i></div>
+                                <div>
+                                    <div class="stat-number">64</div>
+                                    <div class="stat-lbl">Doctors Active</div>
+                                </div>
+                            </div>
+                            <div class="widget-stat">
+                                <div class="stat-icon bg-purple"><i class="fa-solid fa-stopwatch-20"></i></div>
+                                <div>
+                                    <div class="stat-number">&lt; 4m</div>
+                                    <div class="stat-lbl">ER Wait Time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card 1: Heart Rate Monitor -->
+                    <div class="floating-badge float-top-right">
+                        <div class="pulse-icon-box">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                        </div>
+                        <div>
+                            <span class="badge-mini-title">Heart Rate Monitor</span>
+                            <div class="badge-vitals">
+                                <span class="vitals-val">72</span> <span class="vitals-unit">BPM (Normal)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card 2: Digital Prescription -->
+                    <div class="floating-badge float-bottom-left">
+                        <div class="pulse-icon-box bg-accent-light">
+                            <i class="fa-solid fa-file-prescription text-accent"></i>
+                        </div>
+                        <div>
+                            <span class="badge-mini-title">Smart EHR Report</span>
+                            <div class="badge-vitals text-success">
+                                <i class="fa-solid fa-check-double"></i> Ready in Portal
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHT TILES -->
+    <section class="quick-highlights-section">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card" data-action="emergency">
+                    <div class="card-icon icon-danger">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3>24/7 Trauma & Emergency</h3>
+                        <p>Fully equipped Level 1 trauma care with rapid response medical teams.</p>
+                        <a href="tel:18004325844" class="card-link">Call Emergency <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card" data-action="appointment">
+                    <div class="card-icon icon-primary">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3>Instant Online Booking</h3>
+                        <p>Book guaranteed appointment slots with leading specialists in seconds.</p>
+                        <button class="card-btn open-booking-trigger">Schedule Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="highlight-card" data-action="doctors">
+                    <div class="card-icon icon-info">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3>250+ Board Certified Doctors</h3>
+                        <p>Internationally accredited physicians and surgeons across 35 disciplines.</p>
+                        <a href="#doctors" class="card-link">Meet Doctors <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card" data-action="telemedicine">
+                    <div class="card-icon icon-accent">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3>Telehealth Consultations</h3>
+                        <p>Consult with top specialists from the comfort of your home via HD video.</p>
+                        <button class="card-btn open-booking-trigger" data-type="telehealth">Start Telehealth <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & KEY METRICS -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image-wrapper">
+                <div class="about-image-card">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format&fit=crop&q=80" alt="Healthcare Team at Work" class="main-about-img">
+                    <div class="about-badge-card">
+                        <span class="badge-num">25+</span>
+                        <span class="badge-sub">Years of Clinical Excellence</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text-content">
+                <div class="section-tag"><i class="fa-solid fa-hospital"></i> About CarePulse Healthcare</div>
+                <h2 class="section-title">Setting the Benchmark in Patient-Centric Medical Care</h2>
+                <p class="section-desc">
+                    Founded with a mission to deliver accessible, advanced, and compassionate healthcare, CarePulse Hospital brings together multidisciplinary medical experts and cutting-edge digital hospital management technology under one roof.
+                </p>
+                <p class="section-desc">
+                    Our digitalized infrastructure ensures zero wait times, instant access to electronic health records, continuous vital monitoring, and seamless prescription fulfillment.
+                </p>
+
+                <div class="feature-bullets">
+                    <div class="bullet-item">
+                        <div class="bullet-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>JCI & NABH Accredited Hospital</h4>
+                            <p>Adhering to the highest global benchmarks for safety, sterilization, and patient outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <div class="bullet-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>Integrated Digital EMR & Laboratory</h4>
+                            <p>Real-time digital access to clinical notes, diagnostic imaging, and pathology reports.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <div class="bullet-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <h4>Robotic & Minimally Invasive Surgery</h4>
+                            <p>Precision surgical interventions resulting in faster recovery times and minimal discomfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats counters -->
+                <div class="about-counter-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="150000">0</span><span class="plus">+</span>
+                        <p class="counter-label">Happy Patients</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="250">0</span><span class="plus">+</span>
+                        <p class="counter-label">Specialist Doctors</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="99">0</span><span class="plus">.8%</span>
+                        <p class="counter-label">Surgery Success</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="35">0</span><span class="plus">+</span>
+                        <p class="counter-label">Departments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLINICAL DEPARTMENTS -->
+    <section class="departments-section" id="departments">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag"><i class="fa-solid fa-dna"></i> Centers of Excellence</div>
+                <h2 class="section-title">Specialized Clinical Departments</h2>
+                <p class="section-desc max-w-700">
+                    From preventative checkups to critical interventions, our comprehensive medical specialties deliver precision diagnostics and advanced treatments.
+                </p>
+            </div>
+
+            <!-- Department filter chips -->
+            <div class="department-filters">
+                <button class="filter-chip active" data-filter="all">All Specialties</button>
+                <button class="filter-chip" data-filter="critical">Critical & Cardiac</button>
+                <button class="filter-chip" data-filter="surgery">Surgical & Ortho</button>
+                <button class="filter-chip" data-filter="family">Family & Pediatric</button>
+                <button class="filter-chip" data-filter="diagnostics">Diagnostics</button>
+            </div>
+
+            <div class="departments-grid" id="deptGrid">
+                <!-- Cardiology -->
+                <div class="dept-card" data-category="critical">
+                    <div class="dept-icon-wrapper cardiology">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3>Cardiology & Heart Care</h3>
+                    <p>Comprehensive coronary angioplasty, electrophysiology, bypass surgery, and continuous cardiac rehabilitation.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> Advanced Cath Labs</li>
+                        <li><i class="fa-solid fa-angle-right"></i> 24/7 STEMI Code Alert</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Heart Rhythm Clinics</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Cardiology">Consult Cardiologist <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Neurology -->
+                <div class="dept-card" data-category="critical">
+                    <div class="dept-icon-wrapper neurology">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>Neurology & Neurosurgery</h3>
+                    <p>Comprehensive treatment for strokes, epilepsy, Parkinson's disease, brain tumors, and minimally invasive spine surgeries.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> Certified Comprehensive Stroke Unit</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Neuro-Intensive Care (NICU)</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Micro-neurosurgical suites</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Neurology">Consult Neurologist <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Orthopedics -->
+                <div class="dept-card" data-category="surgery">
+                    <div class="dept-icon-wrapper orthopedics">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h3>Orthopedics & Joint Replacement</h3>
+                    <p>Robotic knee & hip replacements, arthroscopy, sports trauma medicine, and dedicated rehabilitation therapy.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> Robotic Arm Joint Arthroplasty</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Sports Injury Care Unit</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Advanced Spine Center</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Orthopedics">Consult Orthopedic <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Pediatrics -->
+                <div class="dept-card" data-category="family">
+                    <div class="dept-icon-wrapper pediatrics">
+                        <i class="fa-solid fa-baby"></i>
+                    </div>
+                    <h3>Pediatrics & Child Care</h3>
+                    <p>Gentle and expert healthcare for newborns to adolescents, including Level 3 NICU and developmental assessments.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> Level 3 Neonatal ICU (NICU)</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Pediatric Immunization</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Child Developmental Psychology</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Pediatrics">Consult Pediatrician <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Oncology -->
+                <div class="dept-card" data-category="critical">
+                    <div class="dept-icon-wrapper oncology">
+                        <i class="fa-solid fa-ribbon"></i>
+                    </div>
+                    <h3>Comprehensive Oncology</h3>
+                    <p>Precision medical, surgical, and radiation oncology backed by molecular tumor boards and targeted immunotherapy.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> Linear Accelerator Radiation</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Daycare Chemotherapy Center</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Genetic Cancer Profiling</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Oncology">Consult Oncologist <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Radiology & Diagnostics -->
+                <div class="dept-card" data-category="diagnostics">
+                    <div class="dept-icon-wrapper diagnostics">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <h3>Radiology & Advanced Imaging</h3>
+                    <p>3 Tesla MRI, 128-Slice Dual Source CT, digital mammography, 4D ultrasound, and molecular pathology lab.</p>
+                    <ul class="dept-features">
+                        <li><i class="fa-solid fa-angle-right"></i> AI-Assisted Imaging Analysis</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Same-Day Report Delivery</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Low-Radiation CT Scanners</li>
+                    </ul>
+                    <button class="dept-action-btn open-booking-trigger" data-dept="Radiology">Book Diagnostic Scan <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOSPITAL MANAGEMENT SYSTEM (HMS) SMART FEATURES -->
+    <section class="hms-features-section" id="features">
+        <div class="container">
+            <div class="features-wrapper">
+                <div class="features-info">
+                    <div class="section-tag light"><i class="fa-solid fa-network-wired"></i> Digital Hospital Ecosystem</div>
+                    <h2 class="section-title text-white">Next-Generation Hospital Management Platform</h2>
+                    <p class="section-desc text-muted-white">
+                        CarePulse is powered by a proprietary unified Healthcare Management System (HMS) that synchronizes outpatients, inpatients, laboratories, ICUs, and billing for seamless clinical delivery.
+                    </p>
+
+                    <div class="hms-feature-list">
+                        <div class="hms-feat-item">
+                            <div class="hms-icon"><i class="fa-solid fa-qrcode"></i></div>
+                            <div>
+                                <h4>Live OPD Queue & Token System</h4>
+                                <p>Patients can track their live token number on their phone and avoid crowded waiting lounges.</p>
+                            </div>
+                        </div>
+
+                        <div class="hms-feat-item">
+                            <div class="hms-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                            <div>
+                                <h4>Centralized Electronic Medical Records (EMR)</h4>
+                                <p>HIPAA-compliant encrypted health history, accessible securely by doctors across all shifts.</p>
+                            </div>
+                        </div>
+
+                        <div class="hms-feat-item">
+                            <div class="hms-icon"><i class="fa-solid fa-bed"></i></div>
+                            <div>
+                                <h4>Smart Bed Occupancy & ICU Management</h4>
+                                <p>Automated real-time bed allocation, ventilator tracking, and emergency ward triage telemetry.</p>
+                            </div>
+                        </div>
+
+                        <div class="hms-feat-item">
+                            <div class="hms-icon"><i class="fa-solid fa-pills"></i></div>
+                            <div>
+                                <h4>Integrated E-Pharmacy & Automated Billing</h4>
+                                <p>Direct digital prescriptions dispatched to pharmacy with contactless insurance processing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hms-cta">
+                        <button class="btn btn-primary" id="explorePortalBtn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open HMS Portal Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="features-preview-card">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-title">CarePulse Enterprise HMS v4.8</div>
+                            <div class="mockup-badge">ONLINE</div>
+                        </div>
+
+                        <div class="mockup-body">
+                            <!-- Quick Stat Cards -->
+                            <div class="mockup-stats-row">
+                                <div class="m-card">
+                                    <div class="m-card-title">Daily OPD Patients</div>
+                                    <div class="m-card-val text-primary">1,248</div>
+                                    <div class="m-card-sub"><i class="fa-solid fa-arrow-trend-up"></i> +12% today</div>
+                                </div>
+                                <div class="m-card">
+                                    <div class="m-card-title">Bed Occupancy</div>
+                                    <div class="m-card-val text-accent">88.4%</div>
+                                    <div class="m-card-sub">342 / 380 Beds</div>
+                                </div>
+                            </div>
+
+                            <!-- Live OPD Token Queue Preview -->
+                            <div class="mockup-section">
+                                <div class="mockup-sec-title">
+                                    <span><i class="fa-solid fa-bolt text-warning"></i> Active OPD Queue Telemetry</span>
+                                    <span class="badge-pill">Live Stream</span>
+                                </div>
+                                <div class="token-list">
+                                    <div class="token-row active">
+                                        <span class="token-id">#CARD-104</span>
+                                        <div class="token-info">
+                                            <strong>Robert Vance</strong>
+                                            <span>Dr. Elena Rostova &bull; Room 302</span>
+                                        </div>
+                                        <span class="token-status status-calling">IN CONSULT</span>
+                                    </div>
+
+                                    <div class="token-row">
+                                        <span class="token-id">#NEUR-089</span>
+                                        <div class="token-info">
+                                            <strong>Sarah Jenkins</strong>
+                                            <span>Dr. Marcus Bennett &bull; Room 215</span>
+                                        </div>
+                                        <span class="token-status status-next">NEXT IN LINE</span>
+                                    </div>
+
+                                    <div class="token-row">
+                                        <span class="token-id">#ORTH-042</span>
+                                        <div class="token-info">
+                                            <strong>David Kim</strong>
+                                            <span>Dr. Alisha Sharma &bull; Room 108</span>
+                                        </div>
+                                        <span class="token-status status-waiting">WAITING (5m)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor Notification Simulation -->
+                            <div class="mockup-alert">
+                                <i class="fa-solid fa-bell text-info"></i>
+                                <div>
+                                    <strong>Pathology Alert:</strong> Blood panel results ready for Patient #P-9041 (ICU-Bed 04).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET OUR SPECIALISTS (DOCTORS) -->
+    <section class="doctors-section" id="doctors">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag"><i class="fa-solid fa-user-doctor"></i> Medical Faculty</div>
+                <h2 class="section-title">Meet Our Distinguished Specialists</h2>
+                <p class="section-desc max-w-700">
+                    Our team of board-certified physicians, surgeons, and specialists bring decades of clinical excellence from leading medical institutions worldwide.
+                </p>
+            </div>
+
+            <!-- Doctor Specialties Filter -->
+            <div class="doctor-filter-nav">
+                <button class="doc-filter active" data-doc-filter="all">All Doctors</button>
+                <button class="doc-filter" data-doc-filter="cardiology">Cardiology</button>
+                <button class="doc-filter" data-doc-filter="neurology">Neurology</button>
+                <button class="doc-filter" data-doc-filter="orthopedics">Orthopedics</button>
+                <button class="doc-filter" data-doc-filter="pediatrics">Pediatrics</button>
+            </div>
+
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-specialty="cardiology">
+                    <div class="doctor-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&auto=format&fit=crop&q=80" alt="Dr. Sarah Mitchell">
+                        <div class="doc-social-overlay">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fa-solid fa-graduation-cap"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                        <span class="exp-badge">18+ Yrs Exp</span>
+                    </div>
+                    <div class="doctor-content">
+                        <div class="doctor-header-row">
+                            <span class="doc-dept">Cardiology</span>
+                            <div class="doc-rating"><i class="fa-solid fa-star"></i> 4.9 (310)</div>
+                        </div>
+                        <h3 class="doctor-name">Dr. Sarah Mitchell, MD</h3>
+                        <p class="doctor-credentials">Harvard Medical School &bull; Interventional Cardiologist</p>
+                        <p class="doctor-bio">Specializing in minimally invasive cardiac catheterization, structural heart diseases, and coronary stenting.</p>
+                        <div class="doctor-footer">
+                            <div class="fee-info">
+                                <span class="fee-label">Consultation Fee</span>
+                                <span class="fee-price">$120</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-doctor-btn" data-doc-name="Dr. Sarah Mitchell" data-dept="Cardiology">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-specialty="neurology">
+                    <div class="doctor-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&auto=format&fit=crop&q=80" alt="Dr. Marcus Bennett">
+                        <div class="doc-social-overlay">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fa-solid fa-graduation-cap"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                        <span class="exp-badge">15+ Yrs Exp</span>
+                    </div>
+                    <div class="doctor-content">
+                        <div class="doctor-header-row">
+                            <span class="doc-dept">Neurology</span>
+                            <div class="doc-rating"><i class="fa-solid fa-star"></i> 5.0 (275)</div>
+                        </div>
+                        <h3 class="doctor-name">Dr. Marcus Bennett, MD, PhD</h3>
+                        <p class="doctor-credentials">Johns Hopkins &bull; Senior Neurosurgeon</p>
+                        <p class="doctor-bio">Pioneer in complex skull base procedures, deep brain stimulation (DBS), and neurovascular interventions.</p>
+                        <div class="doctor-footer">
+                            <div class="fee-info">
+                                <span class="fee-label">Consultation Fee</span>
+                                <span class="fee-price">$150</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-doctor-btn" data-doc-name="Dr. Marcus Bennett" data-dept="Neurology">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-specialty="orthopedics">
+                    <div class="doctor-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1594824813576-2f094db22137?w=600&auto=format&fit=crop&q=80" alt="Dr. Alisha Sharma">
+                        <div class="doc-social-overlay">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fa-solid fa-graduation-cap"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                        <span class="exp-badge">12+ Yrs Exp</span>
+                    </div>
+                    <div class="doctor-content">
+                        <div class="doctor-header-row">
+                            <span class="doc-dept">Orthopedics</span>
+                            <div class="doc-rating"><i class="fa-solid fa-star"></i> 4.8 (190)</div>
+                        </div>
+                        <h3 class="doctor-name">Dr. Alisha Sharma, MS</h3>
+                        <p class="doctor-credentials">Oxford University &bull; Orthopedic Surgeon</p>
+                        <p class="doctor-bio">Specialist in MAKO robotic knee arthroplasty, ligament reconstructions, and comprehensive sports medicine.</p>
+                        <div class="doctor-footer">
+                            <div class="fee-info">
+                                <span class="fee-label">Consultation Fee</span>
+                                <span class="fee-price">$110</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-doctor-btn" data-doc-name="Dr. Alisha Sharma" data-dept="Orthopedics">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card" data-specialty="pediatrics">
+                    <div class="doctor-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=600&auto=format&fit=crop&q=80" alt="Dr. David Campbell">
+                        <div class="doc-social-overlay">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fa-solid fa-graduation-cap"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                        <span class="exp-badge">14+ Yrs Exp</span>
+                    </div>
+                    <div class="doctor-content">
+                        <div class="doctor-header-row">
+                            <span class="doc-dept">Pediatrics</span>
+                            <div class="doc-rating"><i class="fa-solid fa-star"></i> 4.9 (420)</div>
+                        </div>
+                        <h3 class="doctor-name">Dr. David Campbell, MD</h3>
+                        <p class="doctor-credentials">Stanford Medicine &bull; Pediatric Specialist</p>
+                        <p class="doctor-bio">Dedicated to newborn critical wellness, childhood immunizations, asthma management, and adolescent growth.</p>
+                        <div class="doctor-footer">
+                            <div class="fee-info">
+                                <span class="fee-label">Consultation Fee</span>
+                                <span class="fee-price">$95</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-doctor-btn" data-doc-name="Dr. David Campbell" data-dept="Pediatrics">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE HEALTH ASSESSMENT & BMI CALCULATOR -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="calc-card">
+                <div class="calc-header">
+                    <div class="calc-header-text">
+                        <div class="section-tag"><i class="fa-solid fa-heart-circle-bolt"></i> Interactive Wellness Checker</div>
+                        <h2 class="section-title">Check Your Body Mass Index (BMI) & Triage Risk</h2>
+                        <p class="section-desc">Get instant health metrics and recommendations from CarePulse clinical specialists.</p>
+                    </div>
+                    <div class="calc-icon-badge">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+
+                <div class="calc-body-grid">
+                    <form id="bmiForm" class="calc-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bmiGender">Gender</label>
+                                <select id="bmiGender" class="form-control">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bmiAge">Age (Years)</label>
+                                <input type="number" id="bmiAge" class="form-control" placeholder="e.g. 30" min="5" max="110" value="28" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bmiHeight">Height (cm)</label>
+                                <input type="number" id="bmiHeight" class="form-control" placeholder="e.g. 175" min="80" max="250" value="172" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bmiWeight">Weight (kg)</label>
+                                <input type="number" id="bmiWeight" class="form-control" placeholder="e.g. 70" min="20" max="300" value="68" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-calculator"></i> Calculate Health Index
+                        </button>
+                    </form>
+
+                    <!-- Result Panel -->
+                    <div class="calc-result-panel" id="bmiResultBox">
+                        <div class="result-placeholder">
+                            <div class="bmi-score-circle">
+                                <span class="score-val" id="bmiScoreText">23.0</span>
+                                <span class="score-unit">kg/m²</span>
+                            </div>
+                            <h3 class="bmi-status text-success" id="bmiStatusText">Normal & Healthy Weight</h3>
+                            <p class="bmi-feedback" id="bmiAdviceText">
+                                Congratulations! Your BMI falls within the optimal healthy weight category. Maintain your active lifestyle and balanced nutrition.
+                            </p>
+                            <div class="bmi-bar-container">
+                                <div class="bmi-scale">
+                                    <span class="scale-item scale-under">Under</span>
+                                    <span class="scale-item scale-normal">Normal</span>
+                                    <span class="scale-item scale-over">Over</span>
+                                    <span class="scale-item scale-obese">Obese</span>
+                                </div>
+                                <div class="bmi-pointer" id="bmiPointer" style="left: 45%;"></div>
+                            </div>
+                            <button class="btn btn-sm btn-outline open-booking-trigger" data-dept="General Medicine">
+                                Speak with a Nutritionist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & PATIENT STORIES -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag"><i class="fa-solid fa-quote-left"></i> Verified Stories</div>
+                <h2 class="section-title">Loved by Thousands of Patients</h2>
+                <p class="section-desc max-w-700">Read inspiring recovery journeys and real feedback from patients who trusted CarePulse Hospital.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Review 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "The emergency care team at CarePulse saved my father's life during a sudden heart attack. The doctors mobilized the catheterization lab within 10 minutes. The HMS portal also allowed me to track his recovery updates real-time."
+                    </p>
+                    <div class="patient-profile">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&auto=format&fit=crop&q=80" alt="Amanda Sterling">
+                        <div>
+                            <h4>Amanda Sterling</h4>
+                            <span>Cardiac Care Patient Relative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "I underwent robotic knee replacement with Dr. Sharma. I was able to walk without crutches in just 4 days! The hospital rooms resemble a luxury hotel and the digital nursing staff was always attentive and gentle."
+                    </p>
+                    <div class="patient-profile">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80" alt="Michael Chang">
+                        <div>
+                            <h4>Michael Chang</h4>
+                            <span>Orthopedic Surgery Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "Booking appointments online is silky smooth. No standing in queue, lab reports are delivered straight into the patient dashboard, and teleconsultation with Dr. Campbell for our baby was extremely reassuring."
+                    </p>
+                    <div class="patient-profile">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Priya Patel">
+                        <div>
+                            <h4>Priya Patel</h4>
+                            <span>Pediatric & Family Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-wrapper">
+                <div class="faq-left">
+                    <div class="section-tag"><i class="fa-solid fa-circle-question"></i> Help & Guidance</div>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-desc">Have questions regarding appointments, insurance, medical records, or visiting policies? Here are the most common answers.</p>
+                    
+                    <div class="faq-help-box">
+                        <i class="fa-solid fa-headset faq-help-icon"></i>
+                        <div>
+                            <h4>Need Immediate Assistance?</h4>
+                            <p>Our 24/7 patient helpline is always ready to guide you.</p>
+                            <a href="tel:18004325844" class="btn btn-sm btn-primary">Call Help Desk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-accordion-list">
+                    <div class="accordion-item active">
+                        <button class="accordion-header">
+                            <span>How do I book an online appointment with a doctor?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>You can book an appointment directly through this website by clicking the "Book Appointment" button, selecting your desired specialty or doctor, choosing an available date and time slot, and submitting your details. You will receive an instant SMS and email confirmation with your OPD Token.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Does CarePulse accept health insurance and cashless claims?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we partner with over 45 major health insurance providers and Third-Party Administrators (TPAs) for seamless, cashless hospitalization and diagnostic coverage. Our dedicated Insurance Help Desk handles all pre-authorization approvals within 60 minutes.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>How can I access my medical records and lab test reports?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>All diagnostic results, imaging scans, and discharge summaries are automatically uploaded to your secure CarePulse Patient Portal. You can log in using your registered phone number or Patient ID anytime to view or download high-resolution PDF reports.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What are your hospital visiting hours for in-patients?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>General ward visiting hours are Monday to Sunday from 4:00 PM to 7:00 PM. For Intensive Care Units (ICU), visiting hours are restricted to 5:00 PM to 6:00 PM (one attendant per patient) to maintain sterile conditions and optimal patient rest.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Are 24/7 emergency ambulance services available?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes. We operate a fleet of GPS-tracked Advanced Cardiac Life Support (ACLS) ambulances staffed with trained critical care paramedics, ventilators, and defibrillators. Call our direct emergency line at 911 or +1 (800) 432-5844 for immediate dispatch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMERGENCY CALLOUT BANNER -->
+    <section class="emergency-banner-section">
+        <div class="container">
+            <div class="emergency-banner-card">
+                <div class="banner-content">
+                    <div class="banner-badge"><i class="fa-solid fa-triangle-exclamation"></i> Critical Medical Emergency?</div>
+                    <h2>Don't Wait in an Emergency. Every Second Counts.</h2>
+                    <p>Our trauma center is fully mobilized 24/7 with on-call neurosurgeons, cardiologists, and acute care teams.</p>
+                </div>
+                <div class="banner-cta">
+                    <a href="tel:18004325844" class="btn btn-emergency btn-lg">
+                        <i class="fa-solid fa-phone-volume"></i> Emergency: +1 (800) 432-5844
+                    </a>
+                    <button class="btn btn-light-outline btn-lg open-booking-trigger">
+                        Schedule Ambulance
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="brand-logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="brand-text">
+                        <span class="brand-title">Care<span>Pulse</span></span>
+                        <span class="brand-tagline">Hospital Management System</span>
+                    </div>
+                </a>
+                <p class="footer-desc">
+                    Delivering world-class healthcare through medical innovation, empathetic clinical staff, and intelligent hospital management automation.
+                </p>
+                <div class="footer-contact-items">
+                    <div class="f-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>742 Evergreen Healthcare Blvd, Medical City, MC 90210</span>
+                    </div>
+                    <div class="f-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (800) 432-5844 / +1 (555) 019-2834</span>
+                    </div>
+                    <div class="f-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>care@carepulsehospital.org</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Hospital</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Clinical Specialties</a></li>
+                    <li><a href="#doctors"><i class="fa-solid fa-chevron-right"></i> Find a Specialist</a></li>
+                    <li><a href="#features"><i class="fa-solid fa-chevron-right"></i> HMS Platform</a></li>
+                    <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Patient Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Departments</h4>
+                <ul class="footer-links">
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Cardiology & Heart Care</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Neurology & Neurosurgery</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Orthopedics & Joint Care</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Pediatric & Neonatal ICU</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Oncology & Chemotherapy</a></li>
+                    <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Advanced Radiology</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">HMS Portal & Updates</h4>
+                <p class="footer-desc">Subscribe to hospital health bulletins, wellness articles, and scheduled doctor camps.</p>
+                <form id="newsletterForm" class="footer-newsletter">
+                    <div class="input-wrap">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 CarePulse Hospital Management System. All Rights Reserved.</p>
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>&bull;</span>
+                    <a href="#">Terms of Medical Service</a>
+                    <span>&bull;</span>
+                    <a href="#">HIPAA Compliance</a>
+                    <span>&bull;</span>
+                    <a href="#">Patient Rights</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- MODAL: APPOINTMENT BOOKING -->
+    <div class="modal-overlay" id="appointmentModal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <i class="fa-solid fa-calendar-check modal-icon"></i>
+                    <div>
+                        <h3 class="modal-title">Book Doctor Appointment</h3>
+                        <p class="modal-sub">Guaranteed confirmation & instant OPD token generation</p>
+                    </div>
+                </div>
+                <button class="modal-close" id="closeAppointmentModal" aria-label="Close Modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="appointmentForm" class="modal-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientName">Full Name *</label>
+                            <input type="text" id="patientName" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patientPhone">Phone Number *</label>
+                            <input type="tel" id="patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientEmail">Email Address</label>
+                            <input type="email" id="patientEmail" class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="consultType">Consultation Type</label>
+                            <select id="consultType" class="form-control">
+                                <option value="In-Person OPD Consultation">In-Person OPD Consultation</option>
+                                <option value="Video Teleconsultation">Video Teleconsultation</option>
+                                <option value="Diagnostic / Lab Review">Diagnostic / Lab Review</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointDept">Department *</label>
+                            <select id="appointDept" class="form-control" required>
+                                <option value="">Select Department</option>
+                                <option value="Cardiology">Cardiology & Heart Care</option>
+                                <option value="Neurology">Neurology & Neurosurgery</option>
+                                <option value="Orthopedics">Orthopedics & Joint Care</option>
+                                <option value="Pediatrics">Pediatrics & Child Health</option>
+                                <option value="Oncology">Oncology</option>
+                                <option value="Radiology">Radiology & Diagnostics</option>
+                                <option value="General Medicine">General Medicine</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointDoctor">Specialist Doctor</label>
+                            <select id="appointDoctor" class="form-control">
+                                <option value="Any Available Specialist">Any Available Specialist</option>
+                                <option value="Dr. Sarah Mitchell">Dr. Sarah Mitchell (Cardiology)</option>
+                                <option value="Dr. Marcus Bennett">Dr. Marcus Bennett (Neurology)</option>
+                                <option value="Dr. Alisha Sharma">Dr. Alisha Sharma (Orthopedics)</option>
+                                <option value="Dr. David Campbell">Dr. David Campbell (Pediatrics)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointDate">Preferred Date *</label>
+                            <input type="date" id="appointDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointTime">Time Slot *</label>
+                            <select id="appointTime" class="form-control" required>
+                                <option value="">Select Time Slot</option>
+                                <option value="09:00 AM - 10:00 AM">09:00 AM - 10:00 AM</option>
+                                <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
+                                <option value="12:00 PM - 01:00 PM">12:00 PM - 01:00 PM</option>
+                                <option value="02:30 PM - 03:30 PM">02:30 PM - 03:30 PM</option>
+                                <option value="04:00 PM - 05:00 PM">04:00 PM - 05:00 PM</option>
+                                <option value="06:00 PM - 07:00 PM">06:00 PM - 07:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointSymptoms">Symptoms or Medical Condition</label>
+                        <textarea id="appointSymptoms" class="form-control" rows="2" placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <i class="fa-solid fa-check-circle"></i> Confirm & Generate OPD Pass
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: HMS PORTAL LOGIN -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <i class="fa-solid fa-hospital-user modal-icon"></i>
+                    <div>
+                        <h3 class="modal-title">CarePulse HMS Portal</h3>
+                        <p class="modal-sub">Secure electronic healthcare authentication</p>
+                    </div>
+                </div>
+                <button class="modal-close" id="closeLoginModal" aria-label="Close Modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Role switcher tabs -->
+                <div class="portal-role-tabs">
+                    <button class="role-tab active" data-role="patient"><i class="fa-solid fa-user"></i> Patient</button>
+                    <button class="role-tab" data-role="doctor"><i class="fa-solid fa-user-doctor"></i> Doctor</button>
+                    <button class="role-tab" data-role="admin"><i class="fa-solid fa-shield"></i> Staff/Admin</button>
+                </div>
+
+                <form id="portalLoginForm" class="modal-form">
+                    <div class="form-group">
+                        <label for="portalId">Patient ID / Email / Username</label>
+                        <div class="input-icon-wrap">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" id="portalId" class="form-control" placeholder="e.g. PAT-9821 or user@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="portalPassword">Password</label>
+                        <div class="input-icon-wrap">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="portalPassword" class="form-control" placeholder="Enter secure password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-remember-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe" checked>
+                            <span>Remember this terminal</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login to Portal
+                    </button>
+
+                    <div class="portal-footer-notice">
+                        <i class="fa-solid fa-lock text-success"></i> 256-Bit SSL Encrypted & HIPAA Compliant
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+</body>
+</html>
